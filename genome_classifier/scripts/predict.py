@@ -29,7 +29,6 @@ def make_predictions(features_file, completeness_file, output_file):
         print(f"{Fore.RED}Warning: Missing completeness information for genomes: {missing_genomes}")
         features = features[~missing_completeness]
 
-
     # Define the feature columns to use
     feature_columns = [
         'n_marker_spm_median',
