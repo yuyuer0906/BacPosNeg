@@ -66,14 +66,14 @@ pip install -e .
 ### Genome Classification: 
 
 1.
-Preparing a 'completeness.csv'
+Preparing a `completeness.csv`
 
 `CheckM2` and `Quast` are recommended to assess the completeness of genomes, you can manually run `CheckM2` or `Quast` from their respective usage instructions:
 
 - [CheckM2](https://github.com/chklovski/CheckM2)
 - [Quast](https://github.com/ablab/quast)
 
-After running `CheckM2` or `Quast`, please extract the relevant completeness informationthe from each genome's report and manually create or automate the creation of completeness.csv in the following format:
+After running `CheckM2` or `Quast`, please extract the relevant completeness informationthe from each genome's report and manually create or automate the creation of `completeness.csv` in the following format:
 
 ```bash
 Genome,Completeness
