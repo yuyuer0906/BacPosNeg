@@ -31,7 +31,7 @@ cd BacPosNeg
 pip install -r requirements.txt
 ```
 
-### Step 3: Install Realitive Tools
+### Step 3: Install Realted Tools
 
 You can manually install `Diamond`, `Blast`, `Samtools`, `Prodigal`, `Hmmsearch` from their respective sources:
 
@@ -51,6 +51,10 @@ gunzip markers.hmm.gz
 mv markers.hmm genome_classifier/data/
 ```
 
+**NOTE: Manual Download Option**: 
+
+If the `wget` command fails to download the file, you can manually download it by clicking [here](https://drive.google.com/uc?export=download&id=1bCihiTMvaKkwNx6lUzpvtfmxAwVn__ja). After downloading, place the markers.hmm file in the `genome_classifier/data/` directory manually.
+ 
 ### Step 5: Install BacPosNeg Locally
 
 ```bash
