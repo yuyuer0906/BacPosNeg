@@ -104,7 +104,6 @@ class Finefilter:
     # read filtred BLAST outut
         df = pd.read_csv(self.setting.blastout_filtered, sep='\t', header=0)  
       
-    
     # Extract group key from qseqid (before '@')   
         df['group_key'] = df['qseqid'].apply(lambda x: x.split('@')[0])  
       
@@ -113,7 +112,6 @@ class Finefilter:
             output_filename = os.path.join(self.outdir, f'{key}.filtered.txt')  
             group.to_csv(output_filename, sep='\t', index=False, header=True)  
       
-
     def run(self):  
         if self.blastout is None:  
             self.extract_seqs()  
