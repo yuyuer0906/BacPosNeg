@@ -100,7 +100,7 @@ genome_classifier -i /path/to/genome_data -o /path/to/output_dir -c /path/to/com
 
 ```bash
 ratio_calculator prefilter -i /path/to/metagenomic_reads -o /path/to/output_dir -f fa/fq -t 180
-ratio_calculato finefilter -i /path/to/output_dir -o /path/to/output_dir -t 180
+ratio_calculator finefilter -i /path/to/output_dir -o /path/to/output_dir -t 180
 ratio_calculator ratio_calculator -i /path/to/output_dir -o /path/to/output_dir/ratio
 ```
 
