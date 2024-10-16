@@ -68,12 +68,12 @@ pip install -e .
 1.
 Preparing a 'completeness.csv'
 
-`CheckM2` and `Quast` are recommended to assess the completeness of genomes, you can manually run `CheckM2` or `Quast` from their respective usage guid:
+`CheckM2` and `Quast` are recommended to assess the completeness of genomes, you can manually run `CheckM2` or `Quast` from their respective usage instructions:
 
 - [CheckM2](https://github.com/chklovski/CheckM2)
 - [Quast](https://github.com/ablab/quast)
 
-The format of 'completeness.csv' should like this:
+After running `CheckM2` or `Quast`, please extract the relevant completeness informationthe from each genome's report and manually create or automate the creation of completeness.csv in the following format:
 
 ```bash
 Genome,Completeness
