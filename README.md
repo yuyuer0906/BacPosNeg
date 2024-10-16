@@ -53,7 +53,7 @@ mv markers.hmm genome_classifier/data/
 
 **NOTE: Manual Download Option**: 
 
-If the `wget` command fails to download the file, you can manually download it by clicking [here](https://drive.google.com/uc?export=download&id=1bCihiTMvaKkwNx6lUzpvtfmxAwVn__ja). After downloading, place the markers.hmm file in the `genome_classifier/data/` directory manually.
+If the `wget` command fails to download the file, you can manually download it by clicking [here](https://drive.google.com/uc?export=download&id=1bCihiTMvaKkwNx6lUzpvtfmxAwVn__ja). After downloading, unzip and place the `markers.hmm` in the `genome_classifier/data/` directory manually.
  
 ### Step 5: Install BacPosNeg Locally
 
