@@ -120,18 +120,6 @@ We have provided example data for users to test both genome classification and G
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Acknowledgments
-
-This repository uses code and sample data in `GP/GN Ratio Calculation` from the following sources:
-
-- **[ARGs_OAP]**: [args_oap](https://github.com/xinehc/ARGs_OAP). The code and data are licensed under the MIT.
-
-We are grateful to the authors for sharing their work.
-
-## Citation
-
-- Xiaole Yin, ..., Tong Zhang, ARGs-OAP v3.0: Antibiotic resistance gene database curation and analysis pipeline optimization, Engineering, 2023.
-
 
 
 
