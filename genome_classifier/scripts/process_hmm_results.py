@@ -34,8 +34,7 @@ def parse_hmmsearch_table(filepath):
             fields = line.strip().split()
             target_name = fields[0]  # target sequence name
             query_name = fields[2]   # HMM (marker) name
-            # You might want to filter based on E-value or other criteria here
-
+            
             # Increment count for the marker (query_name)
             counts[query_name] = counts.get(query_name, 0) + 1
     return counts
