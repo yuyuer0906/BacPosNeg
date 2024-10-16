@@ -87,21 +87,6 @@ def parser_finefilter(parser):
         help='Output folder, if not given then same as input folder (--indir). [None]')
 
     optional.add_argument(
-        '--e',
-        metavar='FLOAT',
-        default=1e-10,
-        type=float,
-        help='E-value cutoff for target sequences. [1e-10]')
-
-    optional.add_argument(
-        '--id',
-        metavar='FLOAT',
-        default=80,
-        type=float,
-        help='Identity cutoff (in percentage) for target sequences. [80]')
-
-
-    optional.add_argument(
         '--blastout',
         metavar='FILE',
         default=None,
@@ -137,7 +122,7 @@ def parser_ratio_calculator(parser):
 def main(argv=sys.argv):
     '''entry point'''
 
-    parser = ArgumentParser(description=f'BacPosNegID v{__version__}: online analysis pipeline for the ratio of GP and GN bacteria')
+    parser = ArgumentParser(description=f'BacPosNegID v{__version__}: Analysis pipeline for the ratio of GP and GN bacteria')
     subparsers = parser.add_subparsers(dest='subcommand', help='descriptions', metavar='{prefilter, finefilter, ratio_calculator}')
 
     # attach parsers
