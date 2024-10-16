@@ -86,7 +86,7 @@ Genome2,21
 genome_classifier -i /path/to/genome_data -o /path/to/output_dir -c /path/to/completeness_file.csv -t 180
 ```
 
-`-i`: Input directory containing genome files (.fna/.fasta/.fa).
+`-i`: Input directory containing genome files (.fna/.fasta/.fa format).
 
 `-o`: Output directory where results will be saved.
 
@@ -104,7 +104,7 @@ ratio_calculato finefilter -i /path/to/output_dir -o /path/to/output_dir -t 180
 ratio_calculator ratio_calculator -i /path/to/output_dir -o /path/to/output_dir/ratio
 ```
 
-`-i`: Input directory containing metagenomic reads (.fa/.fa.gz or .fq/.fq.gz). If you use paired-end files, please make sure the forward/reverse reads end with `_1|_2`,` _R1|_R2` or `_fwd|_rev` before suffix, for example, `test_1.fa and test_2.fa`.
+`-i`: Input directory containing metagenomic reads (.fa/.fa.gz or .fq/.fq.gz format). If you use paired-end files, please make sure the forward/reverse reads end with `_1|_2`,` _R1|_R2` or `_fwd|_rev` before the file extension, for example, `test_1.fa and test_2.fa`.
 
 `-o`: Output directory where results will be saved.
 
