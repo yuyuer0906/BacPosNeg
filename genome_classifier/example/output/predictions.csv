@@ -1,0 +1,3 @@
+Genome,Completeness,Model Used,Prediction,Probability
+GCF_900476025.1,21,Decision Tree,1,0.5714285714285714
+GCF_025884515.1,45,XGBoost,0,0.43246922

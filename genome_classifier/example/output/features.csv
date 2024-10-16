@@ -1,0 +1,3 @@
+Genome,n_marker_spm_median,p_marker_spm_median,n_marker_num,p_marker_num,sigmoid(n_marker_spm_total-p_marker_spm_total),gene_num
+GCF_900476025.1,0.9984,0.99805,7.0,2.0,0.993262459557282,1378.0
+GCF_025884515.1,0.99915,0.9984,10.0,3.0,0.9990817296320452,1493.0

@@ -1,0 +1,24 @@
+{
+  "version": "1.2",
+  "dbname": "GramPN",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/shiyuyu/24_0530/reads_base/80_merged.fa",
+  "number-of-letters": 11276537,
+  "number-of-sequences": 47059,
+  "last-updated": "2024-10-13T20:18:00",
+  "number-of-volumes": 1,
+  "bytes-total": 24353017,
+  "bytes-to-cache": 11700197,
+  "files": [
+    "GramPN.pdb",
+    "GramPN.phr",
+    "GramPN.pin",
+    "GramPN.pog",
+    "GramPN.pos",
+    "GramPN.pot",
+    "GramPN.psq",
+    "GramPN.ptf",
+    "GramPN.pto"
+  ]
+}

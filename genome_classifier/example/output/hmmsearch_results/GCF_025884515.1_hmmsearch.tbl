@@ -1,0 +1,26 @@
+#                                                                                          --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                                      accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------                            -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NZ_CP103951.1_363    -          n_NC_009937.1_prot_WP_012170187.1_1713_negative -            1.5e-09   34.1   0.9   3.6e-09   32.9   0.7   1.7   2   1   0   2   2   2   1 # 387864 # 388889 # 1 # ID=1_363;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.302
+NZ_CP103951.1_466    -          n_NZ_AP017313.1_prot_WP_096350984.1_1539_negative -            1.2e-06   25.3   2.1   2.1e-06   24.6   2.1   1.4   1   0   0   1   1   1   1 # 500343 # 500591 # 1 # ID=1_466;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.349
+NZ_CP103951.1_429    -          n_NZ_CP014137.1_prot_WP_095835233.1_3743_negative -            4.4e-09   32.9   0.0   5.7e-09   32.5   0.0   1.1   1   0   0   1   1   1   1 # 454991 # 455404 # -1 # ID=1_429;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.300
+NZ_CP103951.1_935    -          n_NZ_CP017478.1_prot_WP_070236893.1_1683_negative -            1.6e-07   28.0   0.7   1.7e-07   27.9   0.7   1.0   1   0   0   1   1   1   1 # 995439 # 995747 # -1 # ID=1_935;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=11-12bp;gc_cont=0.269
+NZ_CP103951.1_996    -          n_NZ_CP017478.1_prot_WP_070236980.1_1785_negative -            1.2e-13   47.5   4.8   2.3e-13   46.6   2.2   2.5   1   1   1   2   2   2   1 # 1052247 # 1052960 # 1 # ID=1_996;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.343
+NZ_CP103951.1_619    -          n_NZ_CP034328.1_prot_WP_125324687.1_1270_negative -            3.9e-06   23.0   0.1   5.6e-06   22.5   0.1   1.2   1   0   0   1   1   1   1 # 664619 # 665728 # 1 # ID=1_619;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.362
+NZ_CP103951.1_996    -          n_NZ_CP048711.1_prot_WP_163496780.1_4068_negative -              7e-22   74.2   0.6   5.1e-17   58.3   0.3   2.3   1   1   1   2   2   2   2 # 1052247 # 1052960 # 1 # ID=1_996;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.343
+NZ_CP103951.1_1363   -          n_NZ_CP118269.1_prot_WP_283547865.1_1676_negative -            6.9e-06   22.3   6.9   9.8e-06   21.8   6.7   1.6   1   1   0   1   1   1   1 # 1474125 # 1474712 # -1 # ID=1_1363;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.306
+NZ_CP103951.1_1344   -          n_NZ_CP119758.1_prot_WP_276166900.1_3880_negative -            9.6e-07   25.6   0.0   1.1e-06   25.3   0.0   1.1   1   0   0   1   1   1   1 # 1451173 # 1451418 # -1 # ID=1_1344;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.260
+NZ_CP103951.1_611    -          n_NZ_OY762512.1_prot_WP_319421802.1_3273_negative -            6.3e-10   34.7   0.1   5.3e-08   28.4   0.0   2.1   2   0   0   2   2   2   2 # 656627 # 657406 # 1 # ID=1_611;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.309
+NZ_CP103951.1_961    -          p_NZ_CP020715.1_prot_WP_085019274.1_1570_positive -            4.4e-08   29.3   0.0   4.9e-08   29.2   0.0   1.1   1   0   0   1   1   1   1 # 1017200 # 1017415 # -1 # ID=1_961;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.301
+NZ_CP103951.1_1243   -          p_NZ_CP038015.1_prot_WP_017379330.1_2064_positive -            1.2e-06   25.2   0.1   1.5e-06   24.9   0.1   1.1   1   0   0   1   1   1   1 # 1339319 # 1339549 # -1 # ID=1_1243;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.307
+NZ_CP103951.1_1423   -          p_NZ_CP134494.1_prot_WP_226085768.1_3870_positive -            8.4e-23   76.9   0.2     1e-22   76.6   0.2   1.1   1   0   0   1   1   1   1 # 1541675 # 1541959 # -1 # ID=1_1423;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12bp;gc_cont=0.305
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      genome_classifier/data/markers.hmm
+# Target file:     /home/shiyuyu/24_1011/BacPosNeg/genome_classifier/example/output/predicted_proteins/GCF_025884515.1.faa
+# Option settings: hmmsearch --tblout /home/shiyuyu/24_1011/BacPosNeg/genome_classifier/example/output/hmmsearch_results/GCF_025884515.1_hmmsearch.tbl -E 1e-5 --cpu 8 genome_classifier/data/markers.hmm /home/shiyuyu/24_1011/BacPosNeg/genome_classifier/example/output/predicted_proteins/GCF_025884515.1.faa 
+# Current dir:     /home/shiyuyu/24_1011/BacPosNeg
+# Date:            Mon Oct 14 20:36:24 2024
+# [ok]
