@@ -21,8 +21,6 @@ class Finefilter:
             os.makedirs(self.outdir, exist_ok=True)
   
         self.blastout = options.get('blastout', None)    
-        self.id = options.get('id', 80)  # 假设默认identity为90  
-        self.e = options.get('e', 1e-10)  # 假设默认evalue为1e-5  
         self.thread = options.get('thread', 8)
         
         self.setting = Setting(self.indir, self.outdir)    
@@ -84,7 +82,7 @@ class Finefilter:
             '-query', self.setting.extracted,
             '-out', self.setting.blastout,
             '-outfmt', ' '.join(['6'] + self.setting.columns),
-            '-evalue', str(self.e),
+            '-evalue', 1e-10,
             '-max_target_seqs', '5',
             '-num_threads', str(self.thread),
             '-mt_mode', mt_mode], check=True)  
@@ -93,7 +91,7 @@ class Finefilter:
         df = pd.read_csv(self.setting.blastout, sep='\t', header=None, names=self.setting.columns)  
     
         # filter results based on identity and e-value  
-        filtered_df = df[(df['pident'] >= self.id) & (df['evalue'] <= self.e)]  
+        filtered_df = df[(df['pident'] >= 80) & (df['evalue'] <= 1e-10)]  
   
         # remove duplicates
         filtered_df = filtered_df.sort_values(['qseqid', 'evalue', 'bitscore', 'length'], ascending=[True, True, False, False])  
