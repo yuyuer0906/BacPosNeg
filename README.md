@@ -6,7 +6,7 @@ This repository was created by Yuyu Shi (_yuyuer0906_). It is a bioinformatics t
 
 2.**GP/GN Ratio Calculation**: Calculates the ratio of GP/GN bacteria in metagenomic datasets.
 
-This repository is designed to simplify the process of analyzing genomic data by automating both classification and ratio calculation steps. The tool is built on Python and leverages DIAMOND and BLAST for prefiltering and fine-filtering genomic data.. 
+This repository is designed to simplify the process of analyzing genomic data by automating both classification and ratio calculation steps. The tool is built on Python and leverages DIAMOND and BLAST for pre-filtering and fine-filtering genomic data.
 
 If you have any questions, please create an issue, or contact Yuyu Shi ([shiyuyu1978@outlook.com](shiyuyu1978@outlook.com)).
 
