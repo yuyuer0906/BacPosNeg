@@ -82,7 +82,7 @@ class Finefilter:
             '-query', self.setting.extracted,
             '-out', self.setting.blastout,
             '-outfmt', ' '.join(['6'] + self.setting.columns),
-            '-evalue', 1e-10,
+            '-evalue', '1e-10',
             '-max_target_seqs', '5',
             '-num_threads', str(self.thread),
             '-mt_mode', mt_mode], check=True)  
