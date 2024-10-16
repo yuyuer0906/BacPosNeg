@@ -45,7 +45,6 @@ class Prefilter:
             except OSError as e:  
                 logger.error(f'Failed to delete {exist_file}: {e}') 
   
-    
     def extract_seqs(self, file):  
         self.run_diamond(file)  
         self.merge_sequences(file)  
@@ -66,13 +65,11 @@ class Prefilter:
             '--quiet'  
         ], check=True, stderr=subprocess.PIPE)  
     
-  
     def merge_sequences(self, file):  
         df = pd.read_table(file.tmp_seqs_txt, header=None, names=['qseqid', 'full_qseq'])  
         df = df.drop_duplicates(subset='qseqid')
         output_file = os.path.join(self.outdir, f'{file.sample_name}_extracted.fa')
 
-  
         with open(output_file, 'a') as f:  
             for cnt, (qseqid, full_qseq) in enumerate(df.values, start=1):  
                 f.write(f'>{file.sample_name}@{file.file_name}@{cnt}@{qseqid}\n{full_qseq}\n')
