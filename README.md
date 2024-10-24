@@ -116,10 +116,6 @@ ratio_calculator ratio_calculator -i /path/to/output_dir -o /path/to/output_dir/
 
 We have provided example data for users to test both genome classification and GP/GN bacteria ratio calculation. You can find them in `genome_classifier/example` directory and `ratio_calculator/sample` dierctory.
 
-### License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 
 
 
