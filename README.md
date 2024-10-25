@@ -83,16 +83,18 @@ Genome2,21
 
 2.
 ```bash
-genome_classifier -i /path/to/genome_data -o /path/to/output_dir -c /path/to/completeness_file.csv -t 180
+genome_classifier -i /path/to/genome_data -o /path/to/output_dir -c /path/to/completeness_file.csv -p 180 -t 180
 ```
 
-`-i`: Input directory containing genome files (.fna/.fasta/.fa format).
+`-i`: Input directory containing genome files (`.fna/.fasta/.fa` format).
 
 `-o`: Output directory where results will be saved.
 
 `-c`: `CSV` file containing genome completeness data (required to select between Decision Tree or XGBoost).
 
-`-t`: Threads of CPU.
+`-p`: Number of CPU threads for Prodigal.
+
+`-t`: Number of CPU threads for Hmmsearch.
 
 ### GP/GN Ratio Calculation:
 
@@ -104,7 +106,7 @@ ratio_calculator finefilter -i /path/to/output_dir -o /path/to/output_dir -t 180
 ratio_calculator ratio_calculator -i /path/to/output_dir -o /path/to/output_dir/ratio
 ```
 
-`-i`: Input directory containing metagenomic reads (.fa/.fa.gz or .fq/.fq.gz format). If you use paired-end files, please make sure the forward/reverse reads end with `_1|_2`,` _R1|_R2` or `_fwd|_rev` before the file extension, for example, `test_1.fa and test_2.fa`.
+`-i`: Input directory containing metagenomic reads (`.fa/.fa.gz` or `.fq/.fq.gz` format). If you use paired-end files, please make sure the forward/reverse reads end with `_1|_2`,` _R1|_R2` or `_fwd|_rev` before the file extension, for example, `test_1.fa and test_2.fa`.
 
 `-o`: Output directory where results will be saved.
 
@@ -115,7 +117,3 @@ ratio_calculator ratio_calculator -i /path/to/output_dir -o /path/to/output_dir/
 ### Example
 
 We have provided example data for users to test both genome classification and GP/GN bacteria ratio calculation. You can find them in `genome_classifier/example` directory and `ratio_calculator/sample` dierctory.
-
-
-
-
