@@ -17,23 +17,27 @@ def main():
     parser.add_argument('-o', '--output_dir', required=True, help='Output directory for results')
     parser.add_argument('-c', '--completeness_file', required=True, help='CSV file containing genome completeness information')
     parser.add_argument('-t', '--threads', type=int, default=4, help="Number of CPU threads for HMMsearch (default: 4)")
+    parser.add_argument('-p', '--prodigal_threads', type=int, default=4, help="Number of CPU threads for Prodigal (default: 4)")
     args = parser.parse_args()
 
     input_dir = args.input_dir
     output_dir = args.output_dir
     completeness_file = args.completeness_file
+    hmm_threads = args.threads
+    prodigal_threads = args.prodigal_threads
+    
     os.makedirs(output_dir, exist_ok=True)
 
     try:
         print("Running Prodigal...")
         predicted_proteins_dir = os.path.join(output_dir, 'predicted_proteins')
         os.makedirs(predicted_proteins_dir, exist_ok=True)
-        run_prodigal_on_folder(input_dir, predicted_proteins_dir)
+        run_prodigal_on_folder(input_dir, predicted_proteins_dir, num_threads=prodigal_threads)
 
         print("Running HMMsearch...")
         hmmsearch_results_dir = os.path.join(output_dir, 'hmmsearch_results')
         os.makedirs(hmmsearch_results_dir, exist_ok=True)
-        run_hmmsearch_on_folder(predicted_proteins_dir, hmmsearch_results_dir, num_cpus=args.threads)
+        run_hmmsearch_on_folder(predicted_proteins_dir, hmmsearch_results_dir, num_cpus=hmm_threads)
 
         print("Processing HMMsearch outputs...")
         processed_results_dir = os.path.join(output_dir, 'processed_results')
